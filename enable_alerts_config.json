@@ -1,0 +1,16 @@
+{
+  "detection": {
+    "model_size": "n",
+    "confidence_threshold": 0.5
+  },
+  "alert": {
+    "enabled": true,
+    "cooldown_seconds": 10,
+    "alert_on_common": true,
+    "alert_on_interesting": true,
+    "alert_on_rare": true,
+    "telegram_enabled": true,
+    "telegram_bot_token": "8580006006:AAFKwzyb9pftdDKyHFRX-HBedt1d_nOm1zU",
+    "telegram_chat_id": "7256925056"
+  }
+}

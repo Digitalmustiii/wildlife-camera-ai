@@ -353,10 +353,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Your Name**
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourname)
+**SANUSI MB**
+- Portfolio: [digitalmustiii.vercel.app](https://digitalmustiii.vercel.app)
+- GitHub: [@Digitalmustiii](https://github.com/Digitalmustiii)
+- LinkedIn: [Mustapha Sanusi B](https://linkedin.com/in/sbmustapha)
 
 ---
 
@@ -373,7 +373,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or feedback, please open an issue or contact me directly.
 
-**Project Link**: [https://github.com/yourusername/wildlife-camera-ai](https://github.com/yourusername/wildlife-camera-ai)
+**Project Link**: [https://github.com/yourusername/wildlife-camera-ai](https://github.com/Digitalmustiii/wildlife-camera-ai)
 
 ---
 

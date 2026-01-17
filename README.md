@@ -93,13 +93,20 @@ Open `dashboard.html` in your browser → View live detections!
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Wildlife+Dashboard)
+![Dashboard](docs/dashboard.png)
+*Real-time web dashboard with live feed, statistics, and activity charts*
 
-### Live Detection
-![Detection](https://via.placeholder.com/800x400?text=Live+Detection)
+### System Statistics
+![Stats](docs/stats.png)
+*Hourly activity patterns and recent detections gallery*
 
-### Telegram Alert
-![Telegram](https://via.placeholder.com/400x600?text=Telegram+Alert)
+### Telegram Alerts
+![Telegram](docs/telegram.png)
+*Instant notifications with photos sent to your phone*
+
+### Terminal Output
+![Terminal](docs/terminal.png)
+*Session summary showing detections, species, and alerts*
 
 ---
 

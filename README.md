@@ -85,7 +85,7 @@ Open `dashboard.html` in your browser → View live detections!
 ## 📊 Tech Stack
 
 **Backend:** Python • YOLOv8 • OpenCV • FastAPI • SQLite  
-**Frontend:** React • Tailwind CSS • WebSocket  
+**Frontend:** HTML • JavaScript • Tailwind CSS • WebSocket  
 **Integration:** Telegram Bot API
 
 ---
@@ -93,13 +93,20 @@ Open `dashboard.html` in your browser → View live detections!
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Wildlife+Dashboard)
+![Dashboard](docs/dashboard.png)
+*Real-time web dashboard with live feed, statistics, and activity charts*
 
-### Live Detection
-![Detection](https://via.placeholder.com/800x400?text=Live+Detection)
+### System Statistics
+![Stats](docs/stats.png)
+*Hourly activity patterns and recent detections gallery*
 
-### Telegram Alert
-![Telegram](https://via.placeholder.com/400x600?text=Telegram+Alert)
+### Telegram Alerts
+![Telegram](docs/telegram.png)
+*Instant notifications with photos sent to your phone*
+
+### Terminal Output
+![Terminal](docs/terminal.png)
+*Session summary showing detections, species, and alerts*
 
 ---
 
@@ -172,13 +179,6 @@ Full setup guide: [Telegram Bot API](https://core.telegram.org/bots)
 **SANUSI MB**  
 Portfolio: [digitalmustiii.vercel.app](https://digitalmustiii.vercel.app) • GitHub: [@Digitalmustiii](https://github.com/Digitalmustiii) • LinkedIn: [Mustapha Sanusi B](https://linkedin.com/in/sbmustapha)
 
----
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE)
-
----
 
 ⭐ **Star this repo if you find it useful!**
 

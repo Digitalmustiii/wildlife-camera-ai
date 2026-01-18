@@ -1,7 +1,3 @@
-"""
-Wildlife Camera Configuration
-Centralized settings for detection, alerts, and recording
-"""
 
 from pathlib import Path
 from dataclasses import dataclass

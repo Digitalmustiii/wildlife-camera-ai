@@ -85,7 +85,7 @@ Open `dashboard.html` in your browser → View live detections!
 ## 📊 Tech Stack
 
 **Backend:** Python • YOLOv8 • OpenCV • FastAPI • SQLite  
-**Frontend:** React • Tailwind CSS • WebSocket  
+**Frontend:** HTML • JavaScript • Tailwind CSS • WebSocket  
 **Integration:** Telegram Bot API
 
 ---
@@ -179,13 +179,6 @@ Full setup guide: [Telegram Bot API](https://core.telegram.org/bots)
 **SANUSI MB**  
 Portfolio: [digitalmustiii.vercel.app](https://digitalmustiii.vercel.app) • GitHub: [@Digitalmustiii](https://github.com/Digitalmustiii) • LinkedIn: [Mustapha Sanusi B](https://linkedin.com/in/sbmustapha)
 
----
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE)
-
----
 
 ⭐ **Star this repo if you find it useful!**
 

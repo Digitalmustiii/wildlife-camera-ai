@@ -1,3 +1,8 @@
+"""
+Wildlife Camera AI - Complete Integrated System
+Detection + Database + Alerts + Telegram + Web API
+"""
+
 import cv2
 import argparse
 from pathlib import Path
@@ -6,7 +11,7 @@ import uuid
 import threading
 import asyncio
 
-from detector import WildlifeDetector
+from detector_optimized import OptimizedWildlifeDetector
 from config import get_config, Config
 from database import WildlifeDatabase
 from alert_manager import AlertManager, console_alert_handler, file_alert_handler
@@ -17,15 +22,20 @@ from api_server import create_api
 class WildlifeCamera:
     """Complete wildlife monitoring system with web dashboard"""
     
-    def __init__(self, config: Config, enable_api: bool = True):
+    def __init__(self, config: Config, enable_api: bool = True, backend: str = 'auto'):
         self.config = config
         self.session_id = datetime.now().strftime('%Y%m%d_%H%M%S')
         self.enable_api = enable_api
+        self.backend = backend
         
         print("🔧 Initializing Wildlife Camera System...")
         
-        self.detector = WildlifeDetector(
-            model_size=config.detection.model_size,
+        # Build model path from model size
+        model_path = f'yolov8{config.detection.model_size}.pt'
+        
+        self.detector = OptimizedWildlifeDetector(
+            model_path=model_path,
+            backend=backend,
             confidence=config.detection.confidence_threshold
         )
         print("✅ Detector loaded")
@@ -98,6 +108,7 @@ class WildlifeCamera:
         print("="*60)
         print(f"📹 Source: {'Webcam' if self.config.video.is_webcam else self.config.video.source}")
         print(f"🤖 Model: YOLOv8{self.config.detection.model_size}")
+        print(f"🚀 Backend: {self.backend.upper()}")
         print(f"⚡ Confidence: {self.config.detection.confidence_threshold}")
         print(f"💾 Database: {self.config.recording.database_path}")
         print(f"🔔 Alerts: {'Enabled' if self.config.alert.enabled else 'Disabled'}")
@@ -288,6 +299,9 @@ def main():
     
     parser.add_argument('--source', type=str, default='0')
     parser.add_argument('--model', type=str, default='n', choices=['n', 's', 'm', 'l', 'x'])
+    parser.add_argument('--backend', type=str, default='auto',
+                       choices=['auto', 'yolov8', 'onnx', 'onnx-int8', 'tensorrt'],
+                       help='Inference backend (auto=best available)')
     parser.add_argument('--confidence', type=float, default=0.5)
     parser.add_argument('--config', type=str)
     parser.add_argument('--telegram-token', type=str)
@@ -325,7 +339,7 @@ def main():
     config.detection.validate()
     config.recording.create_directories()
     
-    camera = WildlifeCamera(config, enable_api=not args.no_api)
+    camera = WildlifeCamera(config, enable_api=not args.no_api, backend=args.backend)
     camera.run()
 
 

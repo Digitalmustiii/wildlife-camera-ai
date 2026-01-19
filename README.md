@@ -214,14 +214,6 @@ The system supports multiple inference backends:
 **SANUSI MB**  
 Portfolio: [digitalmustiii.vercel.app](https://digitalmustiii.vercel.app) • GitHub: [@Digitalmustiii](https://github.com/Digitalmustiii) • LinkedIn: [Mustapha Sanusi B](https://linkedin.com/in/sbmustapha)
 
----
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE)
-
----
-
 ⭐ **Star this repo if you find it useful!**
 
 **Project Link:** [github.com/Digitalmustiii/wildlife-camera-ai](https://github.com/Digitalmustiii/wildlife-camera-ai)
